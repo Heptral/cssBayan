@@ -19,7 +19,6 @@ h2 {
 }
 
 .bayan {
-    padding: 0 1rem 0 1rem;
     height: 100%;
 }
 
@@ -111,12 +110,6 @@ input[type="radio"]:checked+label .cross {
 
     h2 {
         font-size: 0.5rem;
-    }
-
-    .bayan {
-        padding: 0 0.5rem 0 0.5rem;
-        height: 100%;
-        width: 100%;
     }
 }
 
