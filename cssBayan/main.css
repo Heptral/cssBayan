@@ -13,11 +13,13 @@
 h1 {
     font-size: 4rem;
     font-weight: 700;
+    margin-bottom: 1rem;
 }
 
-h2{
+h2 {
     font-size: 1rem;
 }
+
 .bayan {
     height: 100%;
     width: 100%;
@@ -28,7 +30,7 @@ div {
 }
 
 img {
-    width: 50%;
+    width: 80%;
 }
 
 .img-mem-wrapper {
@@ -46,29 +48,25 @@ img {
 
 input {
     display: none;
-    
+
 }
 
 
 
 input[type="radio"]:checked+label .img-mem,
-input[type="radio"]:checked+label .img-mem-wrapper,
-label:hover .img-mem,
-label:hover .img-mem-wrapper {
+input[type="radio"]:checked+label .img-mem-wrapper {
     height: 18rem;
     transition: 1S;
 }
 
-input[type="radio"]:checked+label .amazing-projekt,
-label:hover .amazing-projekt {
+input[type="radio"]:checked+label .amazing-projekt {
     border-radius: 1rem 1rem 0 0;
     transition-delay: 0s;
     transition: 0s;
 }
 
 
-input[type="radio"]:checked+label .cross,
-label:hover .cross {
+input[type="radio"]:checked+label .cross{
     transform: rotate(45deg);
     transition: .5s;
 }
@@ -80,14 +78,49 @@ label:hover .cross {
     height: 60px;
     display: flex;
     align-items: center;
-    border-radius: 12px;
+    border-radius: 1rem;
     background-color: #b4e9eb;
-    padding: 0 15px;
+    padding: 0 1rem;
     transition-delay: 0.8s;
     transition-duration: 0.8s;
 }
 
 .cross {
-    width: 20px;
+    width: 1rem;
 
+}
+
+@media screen and (max-width: 400px) {
+
+    h1 {
+        font-size: 2rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 0.5rem;
+    }
+
+    .img-mem {
+        width: 80%;
+
+    }
+
+}
+
+@media (hover: hover) {
+
+    label:hover .img-mem,
+    label:hover .img-mem-wrapper {
+        height: 18rem;
+        transition: 1S;
+    }
+
+    label:hover .amazing-projekt {
+        border-radius: 1rem 1rem 0 0;
+        transition-delay: 0s;
+        transition: 0s;
+    }
 }
