@@ -2,12 +2,9 @@
     box-sizing: border-box;
 }
 
-.main {
-    max-width: 1920px;
-}
-
 .container {
     margin: 0 auto;
+    width: 50rem;
 }
 
 h1 {
@@ -22,12 +19,8 @@ h2 {
 }
 
 .bayan {
+    padding: 0 1rem 0 1rem;
     height: 100%;
-    width: 100%;
-}
-
-div {
-    max-width: 600px;
 }
 
 img {
@@ -52,8 +45,6 @@ input {
 
 }
 
-
-
 input[type="radio"]:checked+label .img-mem,
 input[type="radio"]:checked+label .img-mem-wrapper {
     height: 18rem;
@@ -72,8 +63,6 @@ input[type="radio"]:checked+label .cross {
     transition: .5s;
 }
 
-
-
 .amazing-projekt {
     justify-content: space-between;
     height: 60px;
@@ -91,9 +80,9 @@ input[type="radio"]:checked+label .cross {
 
 }
 
-@media (max-width: 820px){
+@media (max-width: 820px) {
     h1 {
-        font-size: 3rem;
+        font-size: 2rem;
         font-weight: 600;
         margin-bottom: 0.5rem;
         text-align: center;
@@ -102,10 +91,12 @@ input[type="radio"]:checked+label .cross {
     h2 {
         font-size: 1rem;
     }
-
+    .container {
+        margin: 0 auto;
+        max-width: 80vw;
+    }
     .img-mem {
         width: 80%;
-
     }
 }
 
@@ -122,11 +113,11 @@ input[type="radio"]:checked+label .cross {
         font-size: 0.5rem;
     }
 
-    .img-mem {
-        width: 80%;
-
+    .bayan {
+        padding: 0 0.5rem 0 0.5rem;
+        height: 100%;
+        width: 100%;
     }
-
 }
 
 @media (hover: hover) {
