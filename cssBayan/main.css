@@ -1,0 +1,93 @@
+* {
+    box-sizing: border-box;
+}
+
+.main {
+    max-width: 1920px;
+}
+
+.container {
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 4rem;
+    font-weight: 700;
+}
+
+h2{
+    font-size: 1rem;
+}
+.bayan {
+    height: 100%;
+    width: 100%;
+}
+
+div {
+    max-width: 600px;
+}
+
+img {
+    width: 50%;
+}
+
+.img-mem-wrapper {
+    height: 0;
+    background: linear-gradient(180deg, rgba(180, 233, 235, 1) 0%, rgb(144, 209, 240) 100%, rgb(97, 173, 189) 100%);
+    border-radius: 0 0 1rem 1rem;
+    transition: 1s;
+    text-align: center;
+}
+
+.img-mem {
+    height: 0;
+    transition: .75s;
+}
+
+input {
+    display: none;
+    
+}
+
+
+
+input[type="radio"]:checked+label .img-mem,
+input[type="radio"]:checked+label .img-mem-wrapper,
+label:hover .img-mem,
+label:hover .img-mem-wrapper {
+    height: 18rem;
+    transition: 1S;
+}
+
+input[type="radio"]:checked+label .amazing-projekt,
+label:hover .amazing-projekt {
+    border-radius: 1rem 1rem 0 0;
+    transition-delay: 0s;
+    transition: 0s;
+}
+
+
+input[type="radio"]:checked+label .cross,
+label:hover .cross {
+    transform: rotate(45deg);
+    transition: .5s;
+}
+
+
+
+.amazing-projekt {
+    justify-content: space-between;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background-color: #b4e9eb;
+    padding: 0 15px;
+    transition-delay: 0.8s;
+    transition-duration: 0.8s;
+}
+
+.cross {
+    width: 20px;
+
+}
