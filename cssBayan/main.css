@@ -14,6 +14,7 @@ h1 {
     font-size: 4rem;
     font-weight: 700;
     margin-bottom: 1rem;
+    text-align: center;
 }
 
 h2 {
@@ -66,7 +67,7 @@ input[type="radio"]:checked+label .amazing-projekt {
 }
 
 
-input[type="radio"]:checked+label .cross{
+input[type="radio"]:checked+label .cross {
     transform: rotate(45deg);
     transition: .5s;
 }
@@ -90,10 +91,28 @@ input[type="radio"]:checked+label .cross{
 
 }
 
-@media screen and (max-width: 400px) {
+@media (max-width: 820px){
+    h1 {
+        font-size: 3rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+        text-align: center;
+    }
+
+    h2 {
+        font-size: 1rem;
+    }
+
+    .img-mem {
+        width: 80%;
+
+    }
+}
+
+@media (max-width: 320px) {
 
     h1 {
-        font-size: 2rem;
+        font-size: 1.5rem;
         font-weight: 600;
         margin-bottom: 0.5rem;
         text-align: center;
@@ -122,5 +141,10 @@ input[type="radio"]:checked+label .cross{
         border-radius: 1rem 1rem 0 0;
         transition-delay: 0s;
         transition: 0s;
+    }
+
+    label:hover .cross {
+        transform: rotate(45deg);
+        transition: .5s;
     }
 }
